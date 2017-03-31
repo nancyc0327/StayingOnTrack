@@ -12,6 +12,13 @@
 		88F207F21E8D4FF400D1C151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F207F01E8D4FF400D1C151 /* Main.storyboard */; };
 		88F207F41E8D4FF400D1C151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F207F31E8D4FF400D1C151 /* Assets.xcassets */; };
 		88F207F71E8D4FF400D1C151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F207F51E8D4FF400D1C151 /* LaunchScreen.storyboard */; };
+		88F208001E8D6E6500D1C151 /* FirstScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F207FF1E8D6E6500D1C151 /* FirstScreenTableViewController.swift */; };
+		88F208021E8D6F2A00D1C151 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */; };
+		88F208131E8D8C5100D1C151 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F2080E1E8D8C5000D1C151 /* about.html */; };
+		88F208141E8D8C5100D1C151 /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F2080F1E8D8C5000D1C151 /* credits.html */; };
+		88F208151E8D8C5100D1C151 /* Kindergarten.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208101E8D8C5000D1C151 /* Kindergarten.html */; };
+		88F208161E8D8C5100D1C151 /* Quality-Child-Care.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */; };
+		88F208171E8D8C5100D1C151 /* resources.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208121E8D8C5100D1C151 /* resources.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		88F207F31E8D4FF400D1C151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F207F61E8D4FF400D1C151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88F207F81E8D4FF400D1C151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F207FF1E8D6E6500D1C151 /* FirstScreenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenTableViewController.swift; sourceTree = "<group>"; };
+		88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		88F2080E1E8D8C5000D1C151 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = html/about.html; sourceTree = SOURCE_ROOT; };
+		88F2080F1E8D8C5000D1C151 /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = credits.html; path = html/credits.html; sourceTree = SOURCE_ROOT; };
+		88F208101E8D8C5000D1C151 /* Kindergarten.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Kindergarten.html; path = html/Kindergarten.html; sourceTree = SOURCE_ROOT; };
+		88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Quality-Child-Care.html"; path = "html/Quality-Child-Care.html"; sourceTree = SOURCE_ROOT; };
+		88F208121E8D8C5100D1C151 /* resources.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = resources.html; path = html/resources.html; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,37 @@
 		88F207EB1E8D4FF400D1C151 /* StayingOnTrack */ = {
 			isa = PBXGroup;
 			children = (
-				88F207EC1E8D4FF400D1C151 /* AppDelegate.swift */,
+				88F208181E8D9D2900D1C151 /* html */,
+				88F207FE1E8D502E00D1C151 /* Supporting Files */,
 				88F207EE1E8D4FF400D1C151 /* ViewController.swift */,
 				88F207F01E8D4FF400D1C151 /* Main.storyboard */,
-				88F207F31E8D4FF400D1C151 /* Assets.xcassets */,
 				88F207F51E8D4FF400D1C151 /* LaunchScreen.storyboard */,
-				88F207F81E8D4FF400D1C151 /* Info.plist */,
+				88F207FF1E8D6E6500D1C151 /* FirstScreenTableViewController.swift */,
+				88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */,
 			);
 			path = StayingOnTrack;
+			sourceTree = "<group>";
+		};
+		88F207FE1E8D502E00D1C151 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88F207EC1E8D4FF400D1C151 /* AppDelegate.swift */,
+				88F207F31E8D4FF400D1C151 /* Assets.xcassets */,
+				88F207F81E8D4FF400D1C151 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88F208181E8D9D2900D1C151 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				88F2080E1E8D8C5000D1C151 /* about.html */,
+				88F2080F1E8D8C5000D1C151 /* credits.html */,
+				88F208101E8D8C5000D1C151 /* Kindergarten.html */,
+				88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */,
+				88F208121E8D8C5100D1C151 /* resources.html */,
+			);
+			name = html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +161,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F208141E8D8C5100D1C151 /* credits.html in Resources */,
+				88F208131E8D8C5100D1C151 /* about.html in Resources */,
+				88F208151E8D8C5100D1C151 /* Kindergarten.html in Resources */,
 				88F207F71E8D4FF400D1C151 /* LaunchScreen.storyboard in Resources */,
+				88F208171E8D8C5100D1C151 /* resources.html in Resources */,
 				88F207F41E8D4FF400D1C151 /* Assets.xcassets in Resources */,
 				88F207F21E8D4FF400D1C151 /* Main.storyboard in Resources */,
+				88F208161E8D8C5100D1C151 /* Quality-Child-Care.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F208021E8D6F2A00D1C151 /* SecondScreenViewController.swift in Sources */,
 				88F207EF1E8D4FF400D1C151 /* ViewController.swift in Sources */,
 				88F207ED1E8D4FF400D1C151 /* AppDelegate.swift in Sources */,
+				88F208001E8D6E6500D1C151 /* FirstScreenTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +346,7 @@
 				88F207FD1E8D4FF400D1C151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
