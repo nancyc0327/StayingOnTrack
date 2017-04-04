@@ -30,11 +30,26 @@ class SecondScreenViewController: UIViewController,UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         switch navigationType {
         case .linkClicked:
+            
             // Open links in Safari
             guard let url = request.url else { return true }
+            
+            if request.url?.scheme == "inapp" {
+                if request.url?.host == "contactForm" {
+                    // do capture action
+                    performSegue(withIdentifier: "searchContact",
+                                 sender: self)
+                    print("click contact")
+                }
+                return false;
+            }
+            
+            print (url)
             
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
