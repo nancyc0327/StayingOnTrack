@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactSearchViewController: UIViewController{
+class ContactSearchViewController: UIViewController, UITextFieldDelegate{
 
     @IBOutlet weak var myZipField: UITextField!
     
@@ -27,7 +27,8 @@ class ContactSearchViewController: UIViewController{
         //prepareButton()
         myTextView.text = "temp"
         prepareTextView()
-        
+        myZipField.delegate = self
+        myZipField.keyboardType = UIKeyboardType.numberPad
     }
     
     private func prepareTextView()
@@ -62,12 +63,32 @@ class ContactSearchViewController: UIViewController{
 
     }
     
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        // We ignore any change that doesn't add characters to the text field.
+        // These changes are things like character deletions and cuts, as well
+        // as moving the insertion point.
+        //
+        // We still return true to allow the change to take place.
+        let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
+    }
+    
     @IBAction func mySearchButton(_ sender: UIButton) {
 
         let zip = myZipField.text
         myZipField.text = ""
         myErrorLabel.text = ""
+
         
+        if (zip?.characters.count != 5){
+            myErrorLabel.text = "Input 5 digit number for Zip code."
+            return
+        }
+        
+
+
         let urlStr = "http://edn.ne.gov/referralLookup.php?zip="+zip!
         let url = URL(string: urlStr)
         URLSession.shared.dataTask(with: url!, completionHandler: {
