@@ -20,6 +20,8 @@
 		88F208161E8D8C5100D1C151 /* Quality-Child-Care.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */; };
 		88F208171E8D8C5100D1C151 /* resources.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208121E8D8C5100D1C151 /* resources.html */; };
 		88F2081C1E8EC87200D1C151 /* ContactSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2081B1E8EC87200D1C151 /* ContactSearchViewController.swift */; };
+		88F2081E1E9297D800D1C151 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2081D1E9297D800D1C151 /* ContactModel.swift */; };
+		88F208201E92CDC800D1C151 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2081F1E92CDC800D1C151 /* ContactInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Quality-Child-Care.html"; path = "html/Quality-Child-Care.html"; sourceTree = SOURCE_ROOT; };
 		88F208121E8D8C5100D1C151 /* resources.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = resources.html; path = html/resources.html; sourceTree = SOURCE_ROOT; };
 		88F2081B1E8EC87200D1C151 /* ContactSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSearchViewController.swift; sourceTree = "<group>"; };
+		88F2081D1E9297D800D1C151 /* ContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		88F2081F1E92CDC800D1C151 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				88F207FF1E8D6E6500D1C151 /* FirstScreenTableViewController.swift */,
 				88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */,
 				88F2081B1E8EC87200D1C151 /* ContactSearchViewController.swift */,
+				88F2081D1E9297D800D1C151 /* ContactModel.swift */,
+				88F2081F1E92CDC800D1C151 /* ContactInfoViewController.swift */,
 			);
 			path = StayingOnTrack;
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F2081E1E9297D800D1C151 /* ContactModel.swift in Sources */,
 				88F2081C1E8EC87200D1C151 /* ContactSearchViewController.swift in Sources */,
 				88F208021E8D6F2A00D1C151 /* SecondScreenViewController.swift in Sources */,
+				88F208201E92CDC800D1C151 /* ContactInfoViewController.swift in Sources */,
 				88F207EF1E8D4FF400D1C151 /* ViewController.swift in Sources */,
 				88F207ED1E8D4FF400D1C151 /* AppDelegate.swift in Sources */,
 				88F208001E8D6E6500D1C151 /* FirstScreenTableViewController.swift in Sources */,

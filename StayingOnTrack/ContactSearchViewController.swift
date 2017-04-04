@@ -8,20 +8,23 @@
 
 import UIKit
 
-class ContactSearchViewController: UIViewController {
+class ContactSearchViewController: UIViewController{
 
+    @IBOutlet weak var myZipField: UITextField!
+    
     @IBOutlet weak var mySearchButton: UIButton!
     
     @IBOutlet weak var myTextView: UITextView!
     
     @IBOutlet weak var myErrorLabel: UILabel!
     
+    var contact = ContactModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        prepareButton()
+        //prepareButton()
         myTextView.text = "temp"
         prepareTextView()
         
@@ -59,11 +62,52 @@ class ContactSearchViewController: UIViewController {
 
     }
     
-    @IBAction func mySearchButton(_ sender: Any) {
-        let zip = myTextView.text
+    @IBAction func mySearchButton(_ sender: UIButton) {
+
+        let zip = myZipField.text
+        myZipField.text = ""
+        myErrorLabel.text = ""
         
-        
-        
+        let urlStr = "http://edn.ne.gov/referralLookup.php?zip="+zip!
+        let url = URL(string: urlStr)
+        URLSession.shared.dataTask(with: url!, completionHandler: {
+            (data, response, error) in
+            var errMsg = ""
+            if(error != nil){
+                print("error")
+                errMsg = (error?.localizedDescription)!
+            }else{
+                do{
+                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
+                    
+                    try self.contact = ContactModel(json: json)
+                        
+                    OperationQueue.main.addOperation {
+                            self.performSegue(withIdentifier: "ContactInfo",
+                                                  sender: self)
+                    }
+
+                }catch let error as NSError{
+                    print(error)
+                    errMsg = "Error: Input valide zip code"
+                }catch let err as SerializationError{
+                    switch err {
+                        case .invalidZip(let val):
+                            print("Error: Input valide zip code")
+                            errMsg = val
+                        case .missing(let val):
+                            print("Contact name is missing")
+                            errMsg = val
+                    }
+                    print (err)
+                }
+            }
+            // Used to shorten loading time
+            DispatchQueue.main.sync(execute: {
+                // Update UI here
+                self.myErrorLabel.text = errMsg
+            })
+        }).resume()
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,14 +116,17 @@ class ContactSearchViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ContactInfo"{
+            let vc = segue.destination as! ContactInfoViewController
+            
+            vc.contact = self.contact
+            vc.navigationItem.title = "Contact Infomation"
+        }
     }
-    */
 
 }
