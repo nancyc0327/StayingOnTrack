@@ -6,14 +6,14 @@
 //  Copyright © 2017 Nan Cai. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 enum SerializationError: Error {
     case missing(String)
     case invalidZip(String)
 }
 
-class ContactModel: NSObject {
+class ContactModel{
     var regionNumber = -1
     
     var name = ""
@@ -26,7 +26,7 @@ class ContactModel: NSObject {
     
     var email = ""
     
-    override init() {
+    init() {
         
     }
     

@@ -9,6 +9,7 @@
 import UIKit
 
 class FirstScreenTableViewController: UITableViewController {
+    let data = SubDirModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,22 @@ class FirstScreenTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
 //        let selectedRow = (tableView.indexPathForSelectedRow?.row)!
         print("segue:"+segue.identifier!)
+        if segue.identifier == "Support"{
+            let vc = segue.destination as! SecondScreenTableViewController
+            vc.pageList = data.getSubDir(mainDirName: "Support Growth and Learning")
+        }
+        if segue.identifier == "Milestones"{
+            let vc = segue.destination as! SecondScreenTableViewController
+            vc.pageList = data.getSubDir(mainDirName: "Developmental Milestones by Age")
+        }
+        if segue.identifier == "Healthy"{
+            let vc = segue.destination as! SecondScreenTableViewController
+            vc.pageList = data.getSubDir(mainDirName: "Keep Your Child Healthy")
+        }
+        if segue.identifier == "Safe"{
+            let vc = segue.destination as! SecondScreenTableViewController
+            vc.pageList = data.getSubDir(mainDirName: "Keep Your Child Safe")
+        }
         if segue.identifier == "QualityChildCare"{
             let vc = segue.destination
                 as! SecondScreenViewController

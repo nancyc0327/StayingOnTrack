@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88A690521E9440850071ECBF /* SubDirModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A690511E9440850071ECBF /* SubDirModel.swift */; };
+		88A6905D1E953FB30071ECBF /* 0-3.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690531E953FB30071ECBF /* 0-3.html */; };
+		88A6905E1E953FB30071ECBF /* 2-yr.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690541E953FB30071ECBF /* 2-yr.html */; };
+		88A6905F1E953FB30071ECBF /* 3-6.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690551E953FB30071ECBF /* 3-6.html */; };
+		88A690601E953FB30071ECBF /* 3-yr.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690561E953FB30071ECBF /* 3-yr.html */; };
+		88A690611E953FB30071ECBF /* 4-yr.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690571E953FB30071ECBF /* 4-yr.html */; };
+		88A690621E953FB30071ECBF /* 5-yr.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690581E953FB30071ECBF /* 5-yr.html */; };
+		88A690631E953FB30071ECBF /* 6-9.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690591E953FB30071ECBF /* 6-9.html */; };
+		88A690641E953FB30071ECBF /* 9-12.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A6905A1E953FB30071ECBF /* 9-12.html */; };
+		88A690651E953FB30071ECBF /* 12-18.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A6905B1E953FB30071ECBF /* 12-18.html */; };
+		88A690661E953FB30071ECBF /* disclaimer.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A6905C1E953FB30071ECBF /* disclaimer.html */; };
+		88A6906A1E9540DA0071ECBF /* Growth-Learning-0-18.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690671E9540DA0071ECBF /* Growth-Learning-0-18.html */; };
+		88A6906B1E9540DA0071ECBF /* Growth-Learning-3-5.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690681E9540DA0071ECBF /* Growth-Learning-3-5.html */; };
+		88A6906C1E9540DA0071ECBF /* Growth-Learning-18-3.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690691E9540DA0071ECBF /* Growth-Learning-18-3.html */; };
+		88A6906E1E9548A00071ECBF /* SecondScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A6906D1E9548A00071ECBF /* SecondScreenTableViewController.swift */; };
+		88A690751E9551F10071ECBF /* Child-Health-0-18.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A6906F1E9551F10071ECBF /* Child-Health-0-18.html */; };
+		88A690761E9551F10071ECBF /* Child-Health-3-5.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690701E9551F10071ECBF /* Child-Health-3-5.html */; };
+		88A690771E9551F10071ECBF /* Child-Health-18-3.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690711E9551F10071ECBF /* Child-Health-18-3.html */; };
+		88A690781E9551F10071ECBF /* Child-Safe-0-18.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690721E9551F10071ECBF /* Child-Safe-0-18.html */; };
+		88A690791E9551F10071ECBF /* Child-Safe-3-5.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690731E9551F10071ECBF /* Child-Safe-3-5.html */; };
+		88A6907A1E9551F10071ECBF /* Child-Safe-18-3.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690741E9551F10071ECBF /* Child-Safe-18-3.html */; };
 		88F207ED1E8D4FF400D1C151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F207EC1E8D4FF400D1C151 /* AppDelegate.swift */; };
 		88F207EF1E8D4FF400D1C151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F207EE1E8D4FF400D1C151 /* ViewController.swift */; };
 		88F207F21E8D4FF400D1C151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F207F01E8D4FF400D1C151 /* Main.storyboard */; };
@@ -25,6 +46,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88A690511E9440850071ECBF /* SubDirModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubDirModel.swift; sourceTree = "<group>"; };
+		88A690531E953FB30071ECBF /* 0-3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "0-3.html"; path = "../html/0-3.html"; sourceTree = "<group>"; };
+		88A690541E953FB30071ECBF /* 2-yr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "2-yr.html"; path = "../html/2-yr.html"; sourceTree = "<group>"; };
+		88A690551E953FB30071ECBF /* 3-6.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "3-6.html"; path = "../html/3-6.html"; sourceTree = "<group>"; };
+		88A690561E953FB30071ECBF /* 3-yr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "3-yr.html"; path = "../html/3-yr.html"; sourceTree = "<group>"; };
+		88A690571E953FB30071ECBF /* 4-yr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "4-yr.html"; path = "../html/4-yr.html"; sourceTree = "<group>"; };
+		88A690581E953FB30071ECBF /* 5-yr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "5-yr.html"; path = "../html/5-yr.html"; sourceTree = "<group>"; };
+		88A690591E953FB30071ECBF /* 6-9.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "6-9.html"; path = "../html/6-9.html"; sourceTree = "<group>"; };
+		88A6905A1E953FB30071ECBF /* 9-12.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "9-12.html"; path = "../html/9-12.html"; sourceTree = "<group>"; };
+		88A6905B1E953FB30071ECBF /* 12-18.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "12-18.html"; path = "../html/12-18.html"; sourceTree = "<group>"; };
+		88A6905C1E953FB30071ECBF /* disclaimer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = disclaimer.html; path = ../html/disclaimer.html; sourceTree = "<group>"; };
+		88A690671E9540DA0071ECBF /* Growth-Learning-0-18.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Growth-Learning-0-18.html"; path = "html/Growth-Learning-0-18.html"; sourceTree = SOURCE_ROOT; };
+		88A690681E9540DA0071ECBF /* Growth-Learning-3-5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Growth-Learning-3-5.html"; path = "html/Growth-Learning-3-5.html"; sourceTree = SOURCE_ROOT; };
+		88A690691E9540DA0071ECBF /* Growth-Learning-18-3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Growth-Learning-18-3.html"; path = "html/Growth-Learning-18-3.html"; sourceTree = SOURCE_ROOT; };
+		88A6906D1E9548A00071ECBF /* SecondScreenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenTableViewController.swift; sourceTree = "<group>"; };
+		88A6906F1E9551F10071ECBF /* Child-Health-0-18.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Health-0-18.html"; path = "html/Child-Health-0-18.html"; sourceTree = SOURCE_ROOT; };
+		88A690701E9551F10071ECBF /* Child-Health-3-5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Health-3-5.html"; path = "html/Child-Health-3-5.html"; sourceTree = SOURCE_ROOT; };
+		88A690711E9551F10071ECBF /* Child-Health-18-3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Health-18-3.html"; path = "html/Child-Health-18-3.html"; sourceTree = SOURCE_ROOT; };
+		88A690721E9551F10071ECBF /* Child-Safe-0-18.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Safe-0-18.html"; path = "html/Child-Safe-0-18.html"; sourceTree = SOURCE_ROOT; };
+		88A690731E9551F10071ECBF /* Child-Safe-3-5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Safe-3-5.html"; path = "html/Child-Safe-3-5.html"; sourceTree = SOURCE_ROOT; };
+		88A690741E9551F10071ECBF /* Child-Safe-18-3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Safe-18-3.html"; path = "html/Child-Safe-18-3.html"; sourceTree = SOURCE_ROOT; };
 		88F207E91E8D4FF400D1C151 /* StayingOnTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayingOnTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F207EC1E8D4FF400D1C151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F207EE1E8D4FF400D1C151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +126,8 @@
 				88F2081B1E8EC87200D1C151 /* ContactSearchViewController.swift */,
 				88F2081D1E9297D800D1C151 /* ContactModel.swift */,
 				88F2081F1E92CDC800D1C151 /* ContactInfoViewController.swift */,
+				88A690511E9440850071ECBF /* SubDirModel.swift */,
+				88A6906D1E9548A00071ECBF /* SecondScreenTableViewController.swift */,
 			);
 			path = StayingOnTrack;
 			sourceTree = "<group>";
@@ -101,6 +145,25 @@
 		88F208181E8D9D2900D1C151 /* html */ = {
 			isa = PBXGroup;
 			children = (
+				88A6906F1E9551F10071ECBF /* Child-Health-0-18.html */,
+				88A690701E9551F10071ECBF /* Child-Health-3-5.html */,
+				88A690711E9551F10071ECBF /* Child-Health-18-3.html */,
+				88A690721E9551F10071ECBF /* Child-Safe-0-18.html */,
+				88A690731E9551F10071ECBF /* Child-Safe-3-5.html */,
+				88A690741E9551F10071ECBF /* Child-Safe-18-3.html */,
+				88A690671E9540DA0071ECBF /* Growth-Learning-0-18.html */,
+				88A690681E9540DA0071ECBF /* Growth-Learning-3-5.html */,
+				88A690691E9540DA0071ECBF /* Growth-Learning-18-3.html */,
+				88A690531E953FB30071ECBF /* 0-3.html */,
+				88A690541E953FB30071ECBF /* 2-yr.html */,
+				88A690551E953FB30071ECBF /* 3-6.html */,
+				88A690561E953FB30071ECBF /* 3-yr.html */,
+				88A690571E953FB30071ECBF /* 4-yr.html */,
+				88A690581E953FB30071ECBF /* 5-yr.html */,
+				88A690591E953FB30071ECBF /* 6-9.html */,
+				88A6905A1E953FB30071ECBF /* 9-12.html */,
+				88A6905B1E953FB30071ECBF /* 12-18.html */,
+				88A6905C1E953FB30071ECBF /* disclaimer.html */,
 				88F2080E1E8D8C5000D1C151 /* about.html */,
 				88F2080F1E8D8C5000D1C151 /* credits.html */,
 				88F208101E8D8C5000D1C151 /* Kindergarten.html */,
@@ -170,14 +233,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A6906A1E9540DA0071ECBF /* Growth-Learning-0-18.html in Resources */,
+				88A6905E1E953FB30071ECBF /* 2-yr.html in Resources */,
 				88F208141E8D8C5100D1C151 /* credits.html in Resources */,
+				88A690781E9551F10071ECBF /* Child-Safe-0-18.html in Resources */,
 				88F208131E8D8C5100D1C151 /* about.html in Resources */,
+				88A690651E953FB30071ECBF /* 12-18.html in Resources */,
+				88A690631E953FB30071ECBF /* 6-9.html in Resources */,
+				88A690771E9551F10071ECBF /* Child-Health-18-3.html in Resources */,
+				88A6907A1E9551F10071ECBF /* Child-Safe-18-3.html in Resources */,
 				88F208151E8D8C5100D1C151 /* Kindergarten.html in Resources */,
+				88A690641E953FB30071ECBF /* 9-12.html in Resources */,
+				88A6905D1E953FB30071ECBF /* 0-3.html in Resources */,
+				88A690751E9551F10071ECBF /* Child-Health-0-18.html in Resources */,
+				88A6906B1E9540DA0071ECBF /* Growth-Learning-3-5.html in Resources */,
+				88A690761E9551F10071ECBF /* Child-Health-3-5.html in Resources */,
 				88F207F71E8D4FF400D1C151 /* LaunchScreen.storyboard in Resources */,
+				88A690661E953FB30071ECBF /* disclaimer.html in Resources */,
+				88A6905F1E953FB30071ECBF /* 3-6.html in Resources */,
+				88A690621E953FB30071ECBF /* 5-yr.html in Resources */,
 				88F208171E8D8C5100D1C151 /* resources.html in Resources */,
+				88A6906C1E9540DA0071ECBF /* Growth-Learning-18-3.html in Resources */,
 				88F207F41E8D4FF400D1C151 /* Assets.xcassets in Resources */,
+				88A690611E953FB30071ECBF /* 4-yr.html in Resources */,
+				88A690791E9551F10071ECBF /* Child-Safe-3-5.html in Resources */,
 				88F207F21E8D4FF400D1C151 /* Main.storyboard in Resources */,
 				88F208161E8D8C5100D1C151 /* Quality-Child-Care.html in Resources */,
+				88A690601E953FB30071ECBF /* 3-yr.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,12 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A6906E1E9548A00071ECBF /* SecondScreenTableViewController.swift in Sources */,
 				88F2081E1E9297D800D1C151 /* ContactModel.swift in Sources */,
 				88F2081C1E8EC87200D1C151 /* ContactSearchViewController.swift in Sources */,
 				88F208021E8D6F2A00D1C151 /* SecondScreenViewController.swift in Sources */,
 				88F208201E92CDC800D1C151 /* ContactInfoViewController.swift in Sources */,
 				88F207EF1E8D4FF400D1C151 /* ViewController.swift in Sources */,
 				88F207ED1E8D4FF400D1C151 /* AppDelegate.swift in Sources */,
+				88A690521E9440850071ECBF /* SubDirModel.swift in Sources */,
 				88F208001E8D6E6500D1C151 /* FirstScreenTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\n";
 				DEVELOPMENT_TEAM = LDTL48A298;
 				INFOPLIST_FILE = StayingOnTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -330,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEVELOPMENT_TEAM = LDTL48A298;
 				INFOPLIST_FILE = StayingOnTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -63,7 +63,7 @@ class ContactSearchViewController: UIViewController, UITextFieldDelegate{
 
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // We ignore any change that doesn't add characters to the text field.
         // These changes are things like character deletions and cuts, as well
         // as moving the insertion point.
