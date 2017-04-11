@@ -13,7 +13,7 @@ class FirstScreenTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print ("load tvc")
+        //print ("load tvc")
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +29,7 @@ class FirstScreenTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
 //        let selectedRow = (tableView.indexPathForSelectedRow?.row)!
-        print("segue:"+segue.identifier!)
+        //print("segue:"+segue.identifier!)
         if segue.identifier == "Support"{
             let vc = segue.destination as! SecondScreenTableViewController
             vc.pageList = data.getSubDir(mainDirName: "Support Growth and Learning")
