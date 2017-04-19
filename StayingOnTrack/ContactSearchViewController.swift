@@ -18,13 +18,18 @@ class ContactSearchViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var myErrorLabel: UILabel!
     
+    @IBAction func tapEDU(_ sender: Any) {
+ //       UIApplication.shared.openURL(! as URL)
+        UIApplication.shared.open(NSURL(string: "https://www.education.ne.gov/")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    
     var contact = ContactModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //prepareButton()
         myTextView.text = "temp"
         prepareTextView()
         myZipField.delegate = self

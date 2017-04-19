@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		884F7CE81EA7BC84001DFE4C /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F7CE71EA7BC84001DFE4C /* FirstScreenViewController.swift */; };
+		884F7CEA1EA7C7B6001DFE4C /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CE91EA7C7B6001DFE4C /* appicon.png */; };
 		88A690521E9440850071ECBF /* SubDirModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A690511E9440850071ECBF /* SubDirModel.swift */; };
 		88A6905D1E953FB30071ECBF /* 0-3.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690531E953FB30071ECBF /* 0-3.html */; };
 		88A6905E1E953FB30071ECBF /* 2-yr.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690541E953FB30071ECBF /* 2-yr.html */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		884F7CE71EA7BC84001DFE4C /* FirstScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		884F7CE91EA7C7B6001DFE4C /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		88A690511E9440850071ECBF /* SubDirModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubDirModel.swift; sourceTree = "<group>"; };
 		88A690531E953FB30071ECBF /* 0-3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "0-3.html"; path = "../html/0-3.html"; sourceTree = "<group>"; };
 		88A690541E953FB30071ECBF /* 2-yr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "2-yr.html"; path = "../html/2-yr.html"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		88F207EB1E8D4FF400D1C151 /* StayingOnTrack */ = {
 			isa = PBXGroup;
 			children = (
+				884F7CE91EA7C7B6001DFE4C /* appicon.png */,
 				88F208181E8D9D2900D1C151 /* html */,
 				88F207FE1E8D502E00D1C151 /* Supporting Files */,
 				88F207EE1E8D4FF400D1C151 /* ViewController.swift */,
@@ -256,6 +259,7 @@
 				88A6905F1E953FB30071ECBF /* 3-6.html in Resources */,
 				88A690621E953FB30071ECBF /* 5-yr.html in Resources */,
 				88F208171E8D8C5100D1C151 /* resources.html in Resources */,
+				884F7CEA1EA7C7B6001DFE4C /* appicon.png in Resources */,
 				88A6906C1E9540DA0071ECBF /* Growth-Learning-18-3.html in Resources */,
 				88F207F41E8D4FF400D1C151 /* Assets.xcassets in Resources */,
 				88A690611E953FB30071ECBF /* 4-yr.html in Resources */,
