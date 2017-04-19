@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		884F7CE81EA7BC84001DFE4C /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F7CE71EA7BC84001DFE4C /* FirstScreenViewController.swift */; };
 		884F7CEA1EA7C7B6001DFE4C /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CE91EA7C7B6001DFE4C /* appicon.png */; };
+		884F7CF51EA7E0F2001DFE4C /* be_like.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CEB1EA7E0F2001DFE4C /* be_like.html */; };
+		884F7CF61EA7E0F2001DFE4C /* first_day.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CEC1EA7E0F2001DFE4C /* first_day.html */; };
+		884F7CF71EA7E0F2001DFE4C /* help_child_ready.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CED1EA7E0F2001DFE4C /* help_child_ready.html */; };
+		884F7CF81EA7E0F2001DFE4C /* Immunizations.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CEE1EA7E0F2001DFE4C /* Immunizations.html */; };
+		884F7CF91EA7E0F2001DFE4C /* kinder_about.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CEF1EA7E0F2001DFE4C /* kinder_about.html */; };
+		884F7CFA1EA7E0F2001DFE4C /* know_ready.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CF01EA7E0F2001DFE4C /* know_ready.html */; };
+		884F7CFB1EA7E0F2001DFE4C /* now_next_yr.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CF11EA7E0F2001DFE4C /* now_next_yr.html */; };
+		884F7CFC1EA7E0F2001DFE4C /* readiness.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CF21EA7E0F2001DFE4C /* readiness.html */; };
+		884F7CFD1EA7E0F2001DFE4C /* starting_K.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CF31EA7E0F2001DFE4C /* starting_K.html */; };
+		884F7CFE1EA7E0F2001DFE4C /* support_education.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CF41EA7E0F2001DFE4C /* support_education.html */; };
+		884F7D001EA7ED6B001DFE4C /* car-seat-safety.html in Resources */ = {isa = PBXBuildFile; fileRef = 884F7CFF1EA7ED6B001DFE4C /* car-seat-safety.html */; };
+		884F7D041EA7F9ED001DFE4C /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 884F7D031EA7F9ED001DFE4C /* style.css */; };
 		88A690521E9440850071ECBF /* SubDirModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A690511E9440850071ECBF /* SubDirModel.swift */; };
 		88A6905D1E953FB30071ECBF /* 0-3.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690531E953FB30071ECBF /* 0-3.html */; };
 		88A6905E1E953FB30071ECBF /* 2-yr.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690541E953FB30071ECBF /* 2-yr.html */; };
@@ -39,7 +51,6 @@
 		88F208021E8D6F2A00D1C151 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */; };
 		88F208131E8D8C5100D1C151 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F2080E1E8D8C5000D1C151 /* about.html */; };
 		88F208141E8D8C5100D1C151 /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F2080F1E8D8C5000D1C151 /* credits.html */; };
-		88F208151E8D8C5100D1C151 /* Kindergarten.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208101E8D8C5000D1C151 /* Kindergarten.html */; };
 		88F208161E8D8C5100D1C151 /* Quality-Child-Care.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */; };
 		88F208171E8D8C5100D1C151 /* resources.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F208121E8D8C5100D1C151 /* resources.html */; };
 		88F2081C1E8EC87200D1C151 /* ContactSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2081B1E8EC87200D1C151 /* ContactSearchViewController.swift */; };
@@ -50,6 +61,18 @@
 /* Begin PBXFileReference section */
 		884F7CE71EA7BC84001DFE4C /* FirstScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		884F7CE91EA7C7B6001DFE4C /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		884F7CEB1EA7E0F2001DFE4C /* be_like.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = be_like.html; path = html/be_like.html; sourceTree = SOURCE_ROOT; };
+		884F7CEC1EA7E0F2001DFE4C /* first_day.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = first_day.html; path = html/first_day.html; sourceTree = SOURCE_ROOT; };
+		884F7CED1EA7E0F2001DFE4C /* help_child_ready.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = help_child_ready.html; path = html/help_child_ready.html; sourceTree = SOURCE_ROOT; };
+		884F7CEE1EA7E0F2001DFE4C /* Immunizations.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Immunizations.html; path = html/Immunizations.html; sourceTree = SOURCE_ROOT; };
+		884F7CEF1EA7E0F2001DFE4C /* kinder_about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = kinder_about.html; path = html/kinder_about.html; sourceTree = SOURCE_ROOT; };
+		884F7CF01EA7E0F2001DFE4C /* know_ready.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = know_ready.html; path = html/know_ready.html; sourceTree = SOURCE_ROOT; };
+		884F7CF11EA7E0F2001DFE4C /* now_next_yr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = now_next_yr.html; path = html/now_next_yr.html; sourceTree = SOURCE_ROOT; };
+		884F7CF21EA7E0F2001DFE4C /* readiness.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = readiness.html; path = html/readiness.html; sourceTree = SOURCE_ROOT; };
+		884F7CF31EA7E0F2001DFE4C /* starting_K.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = starting_K.html; path = html/starting_K.html; sourceTree = SOURCE_ROOT; };
+		884F7CF41EA7E0F2001DFE4C /* support_education.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = support_education.html; path = html/support_education.html; sourceTree = SOURCE_ROOT; };
+		884F7CFF1EA7ED6B001DFE4C /* car-seat-safety.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "car-seat-safety.html"; path = "html/car-seat-safety.html"; sourceTree = SOURCE_ROOT; };
+		884F7D031EA7F9ED001DFE4C /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		88A690511E9440850071ECBF /* SubDirModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubDirModel.swift; sourceTree = "<group>"; };
 		88A690531E953FB30071ECBF /* 0-3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "0-3.html"; path = "../html/0-3.html"; sourceTree = "<group>"; };
 		88A690541E953FB30071ECBF /* 2-yr.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "2-yr.html"; path = "../html/2-yr.html"; sourceTree = "<group>"; };
@@ -82,7 +105,6 @@
 		88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 		88F2080E1E8D8C5000D1C151 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = html/about.html; sourceTree = SOURCE_ROOT; };
 		88F2080F1E8D8C5000D1C151 /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = credits.html; path = html/credits.html; sourceTree = SOURCE_ROOT; };
-		88F208101E8D8C5000D1C151 /* Kindergarten.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Kindergarten.html; path = html/Kindergarten.html; sourceTree = SOURCE_ROOT; };
 		88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Quality-Child-Care.html"; path = "html/Quality-Child-Care.html"; sourceTree = SOURCE_ROOT; };
 		88F208121E8D8C5100D1C151 /* resources.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = resources.html; path = html/resources.html; sourceTree = SOURCE_ROOT; };
 		88F2081B1E8EC87200D1C151 /* ContactSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSearchViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +142,7 @@
 		88F207EB1E8D4FF400D1C151 /* StayingOnTrack */ = {
 			isa = PBXGroup;
 			children = (
+				884F7D031EA7F9ED001DFE4C /* style.css */,
 				884F7CE91EA7C7B6001DFE4C /* appicon.png */,
 				88F208181E8D9D2900D1C151 /* html */,
 				88F207FE1E8D502E00D1C151 /* Supporting Files */,
@@ -151,6 +174,17 @@
 		88F208181E8D9D2900D1C151 /* html */ = {
 			isa = PBXGroup;
 			children = (
+				884F7CFF1EA7ED6B001DFE4C /* car-seat-safety.html */,
+				884F7CEB1EA7E0F2001DFE4C /* be_like.html */,
+				884F7CEC1EA7E0F2001DFE4C /* first_day.html */,
+				884F7CED1EA7E0F2001DFE4C /* help_child_ready.html */,
+				884F7CEE1EA7E0F2001DFE4C /* Immunizations.html */,
+				884F7CEF1EA7E0F2001DFE4C /* kinder_about.html */,
+				884F7CF01EA7E0F2001DFE4C /* know_ready.html */,
+				884F7CF11EA7E0F2001DFE4C /* now_next_yr.html */,
+				884F7CF21EA7E0F2001DFE4C /* readiness.html */,
+				884F7CF31EA7E0F2001DFE4C /* starting_K.html */,
+				884F7CF41EA7E0F2001DFE4C /* support_education.html */,
 				88A6906F1E9551F10071ECBF /* Child-Health-0-18.html */,
 				88A690701E9551F10071ECBF /* Child-Health-3-5.html */,
 				88A690711E9551F10071ECBF /* Child-Health-18-3.html */,
@@ -172,7 +206,6 @@
 				88A6905C1E953FB30071ECBF /* disclaimer.html */,
 				88F2080E1E8D8C5000D1C151 /* about.html */,
 				88F2080F1E8D8C5000D1C151 /* credits.html */,
-				88F208101E8D8C5000D1C151 /* Kindergarten.html */,
 				88F208111E8D8C5000D1C151 /* Quality-Child-Care.html */,
 				88F208121E8D8C5100D1C151 /* resources.html */,
 			);
@@ -242,19 +275,30 @@
 				88A6906A1E9540DA0071ECBF /* Growth-Learning-0-18.html in Resources */,
 				88A6905E1E953FB30071ECBF /* 2-yr.html in Resources */,
 				88F208141E8D8C5100D1C151 /* credits.html in Resources */,
+				884F7CFB1EA7E0F2001DFE4C /* now_next_yr.html in Resources */,
 				88A690781E9551F10071ECBF /* Child-Safe-0-18.html in Resources */,
 				88F208131E8D8C5100D1C151 /* about.html in Resources */,
+				884F7CF81EA7E0F2001DFE4C /* Immunizations.html in Resources */,
 				88A690651E953FB30071ECBF /* 12-18.html in Resources */,
 				88A690631E953FB30071ECBF /* 6-9.html in Resources */,
 				88A690771E9551F10071ECBF /* Child-Health-18-3.html in Resources */,
+				884F7D041EA7F9ED001DFE4C /* style.css in Resources */,
 				88A6907A1E9551F10071ECBF /* Child-Safe-18-3.html in Resources */,
-				88F208151E8D8C5100D1C151 /* Kindergarten.html in Resources */,
 				88A690641E953FB30071ECBF /* 9-12.html in Resources */,
+				884F7CF91EA7E0F2001DFE4C /* kinder_about.html in Resources */,
+				884F7CF51EA7E0F2001DFE4C /* be_like.html in Resources */,
 				88A6905D1E953FB30071ECBF /* 0-3.html in Resources */,
+				884F7CFA1EA7E0F2001DFE4C /* know_ready.html in Resources */,
+				884F7D001EA7ED6B001DFE4C /* car-seat-safety.html in Resources */,
+				884F7CFD1EA7E0F2001DFE4C /* starting_K.html in Resources */,
 				88A690751E9551F10071ECBF /* Child-Health-0-18.html in Resources */,
 				88A6906B1E9540DA0071ECBF /* Growth-Learning-3-5.html in Resources */,
+				884F7CFC1EA7E0F2001DFE4C /* readiness.html in Resources */,
+				884F7CF71EA7E0F2001DFE4C /* help_child_ready.html in Resources */,
 				88A690761E9551F10071ECBF /* Child-Health-3-5.html in Resources */,
 				88F207F71E8D4FF400D1C151 /* LaunchScreen.storyboard in Resources */,
+				884F7CF61EA7E0F2001DFE4C /* first_day.html in Resources */,
+				884F7CFE1EA7E0F2001DFE4C /* support_education.html in Resources */,
 				88A690661E953FB30071ECBF /* disclaimer.html in Resources */,
 				88A6905F1E953FB30071ECBF /* 3-6.html in Resources */,
 				88A690621E953FB30071ECBF /* 5-yr.html in Resources */,

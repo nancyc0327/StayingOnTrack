@@ -54,6 +54,16 @@ class SubDirModel {
         addItem(mainDirName:"Keep Your Child Safe",secondDirName:"0-18 Months",pageFileName:"Child-Safe-0-18")
         addItem(mainDirName:"Keep Your Child Safe",secondDirName:"18 Months - 3 Years",pageFileName:"Child-Safe-18-3")
         addItem(mainDirName:"Keep Your Child Safe",secondDirName:"3-5 Years",pageFileName:"Child-Safe-3-5")
+        
+        addItem(mainDirName:"Kindergarten",secondDirName:"What does school readiness mean?",pageFileName:"readiness")
+        addItem(mainDirName:"Kindergarten",secondDirName:"When can my child start kindergarten?",pageFileName:"starting_K")
+        addItem(mainDirName:"Kindergarten",secondDirName:"How do I know if my child is ready?",pageFileName:"know_ready")
+        addItem(mainDirName:"Kindergarten",secondDirName:"What will kindergarten be like?",pageFileName:"be_like")
+        addItem(mainDirName:"Kindergarten",secondDirName:"Should my child start now or next year?",pageFileName:"now_next_yr")
+        addItem(mainDirName:"Kindergarten",secondDirName:"How can I help my child be ready?",pageFileName:"help_child_ready")
+        addItem(mainDirName:"Kindergarten",secondDirName:"How can I prepare for the first day?",pageFileName:"first_day")
+        addItem(mainDirName:"Kindergarten",secondDirName:"How can I support my child's education?",pageFileName:"support_education")
+        addItem(mainDirName:"Kindergarten",secondDirName:"About",pageFileName:"kinder_about")
     }
     
     func getSubDir(mainDirName:String) ->[PageInfo]{

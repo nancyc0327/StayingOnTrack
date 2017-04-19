@@ -53,10 +53,9 @@ class FirstScreenViewController: UIViewController {
                 as! SecondScreenViewController
             vc.addressString = "Quality-Child-Care"
         }
-        if segue.identifier == "NKindergarten"{
-            let vc = segue.destination
-                as! SecondScreenViewController
-            vc.addressString = "Kindergarten"
+        if segue.identifier == "Kindergarten"{
+            let vc = segue.destination as! SecondScreenTableViewController
+            vc.pageList = data.getSubDir(mainDirName: "Kindergarten")
         }
         if segue.identifier == "NResources"{
             let vc = segue.destination

@@ -43,19 +43,54 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func insertContentsOfCSSFile(into webView: WKWebView) {
+        
+       if  let path = Bundle.main.path(forResource: "style", ofType: "css")
+        {
+            let cssString = try! String(contentsOfFile: path).trimmingCharacters(in: .whitespacesAndNewlines)
+            let jsString = "var style = document.createElement('style'); style.innerHTML = '\(cssString)'; document.head.appendChild(style);"
+            webView.evaluateJavaScript(jsString, completionHandler: nil)
+
+        }
+        else {
+                return
+        }
+    }
+    func insertCSSString(into webView: WKWebView) {
+        let cssString = "body { font-size: 50px; color: #f00 }"
+        let jsString = "var style = document.createElement('style'); style.innerHTML = '\(cssString)'; document.head.appendChild(style);"
+        webView.evaluateJavaScript(jsString, completionHandler: nil)
+    }
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+        //insertCSSString(into: webView) // 1
+        insertContentsOfCSSFile(into: webView) // 2
+    }
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
+        
         if navigationAction.navigationType == .linkActivated  {
+            
             let newURL = navigationAction.request.url
+            
             if newURL?.scheme == "inapp"{
                 if newURL?.host == "contactForm"{
                     performSegue(withIdentifier: "searchContact",sender: self)
                     //print("click contact")
                 }
+                decisionHandler(.allow)
             }
-            decisionHandler(.allow)
+            else if UIApplication.shared.canOpenURL(newURL!) {
+                UIApplication.shared.open(newURL! as URL, options: [:], completionHandler: nil)
+                //print(newURL!)
+                //print("Redirected to browser. No need to open it locally")
+                decisionHandler(.cancel)
+            }
+            else{
+                decisionHandler(.allow)
+            }
           
         } else {
             //print("not a user click")

@@ -39,7 +39,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svk-l0-CbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="125"/>
+            <point key="canvasLocation" x="1166" y="578"/>
         </scene>
         <!--Second Screen View Controller-->
         <scene sceneID="svO-yh-C5W">
@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Emf-Kp-GzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032.3369565217392" y="139.13043478260872"/>
+            <point key="canvasLocation" x="2021" y="503"/>
         </scene>
         <!--Contact Info View Controller-->
         <scene sceneID="RJj-jn-X2O">
@@ -307,12 +307,9 @@ Child Care</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UvR-Bs-gHo">
                                 <rect key="frame" x="30" y="278" width="333" height="58"/>
                                 <color key="backgroundColor" red="0.20784313730000001" green="0.74117647060000003" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <string key="title">Preparing for
-Kindergarten</string>
-                                </state>
+                                <state key="normal" title="Kindergarten"/>
                                 <connections>
-                                    <segue destination="seq-a1-TUz" kind="show" identifier="NKindergarten" id="GEs-ng-Clw"/>
+                                    <segue destination="31t-Bv-BSz" kind="show" identifier="Kindergarten" id="uX3-ls-jYu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6X7-OQ-eoX">
@@ -418,8 +415,8 @@ Kindergarten</string>
         <image name="appicon.png" width="57" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="soq-rd-c7a"/>
-        <segue reference="z3t-f2-KgQ"/>
-        <segue reference="gxY-84-eup"/>
+        <segue reference="3sc-Wk-GPK"/>
+        <segue reference="uX3-ls-jYu"/>
+        <segue reference="MTl-56-jfP"/>
     </inferredMetricsTieBreakers>
 </document>

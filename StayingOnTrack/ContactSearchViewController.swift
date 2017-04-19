@@ -28,12 +28,23 @@ class ContactSearchViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        self.view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
         myTextView.text = "temp"
         prepareTextView()
         myZipField.delegate = self
         myZipField.keyboardType = UIKeyboardType.numberPad
+    }
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     private func prepareTextView()
@@ -59,14 +70,6 @@ class ContactSearchViewController: UIViewController, UITextFieldDelegate{
         myTextView.attributedText = attrText
     }
     
-    private func prepareButton()
-    {
-        mySearchButton.backgroundColor = .clear
-        mySearchButton.layer.cornerRadius = 5
-        mySearchButton.layer.borderWidth = 1
-        mySearchButton.layer.borderColor = UIColor.black.cgColor
-
-    }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // We ignore any change that doesn't add characters to the text field.
