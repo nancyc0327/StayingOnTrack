@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import WebKit
 
-class SecondScreenViewController: UIViewController,UIWebViewDelegate {
+class SecondScreenViewController: UIViewController,WKNavigationDelegate {
     
     var addressString = "test"
 
-    @IBOutlet weak var myWebView: UIWebView!
+    //@IBOutlet weak var myWebView: UIWebView!
+    var webView : WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +22,20 @@ class SecondScreenViewController: UIViewController,UIWebViewDelegate {
         // Do any additional setup after loading the view.
         let localfilePath = Bundle.main.url(forResource: addressString, withExtension: "html")
         let myRequest = NSURLRequest(url: localfilePath!);
-        myWebView.loadRequest(myRequest as URLRequest)
-        //print("load vc"+addressString)
-        myWebView.delegate = self
+        
+        
+        // init and load request in webview.
+        
+        URLCache.shared.removeAllCachedResponses()
+        URLCache.shared.diskCapacity = 0
+        URLCache.shared.memoryCapacity = 0
+        
+        
+        webView = WKWebView(frame: self.view.frame)
+        webView.navigationDelegate = self
+        webView.load(myRequest as URLRequest)
+        self.view.addSubview(webView)
+        self.view.sendSubview(toBack: webView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,38 +44,25 @@ class SecondScreenViewController: UIViewController,UIWebViewDelegate {
     }
     
     
-    
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        switch navigationType {
-        case .linkClicked:
-            
-            // Open links in Safari
-            guard let url = request.url else { return true }
-            
-            if request.url?.scheme == "inapp" {
-                if request.url?.host == "contactForm" {
-                    // do capture action
-                    performSegue(withIdentifier: "searchContact",
-                                 sender: self)
+/*
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        if navigationAction.navigationType == .linkActivated  {
+            let newURL = navigationAction.request.url
+            if newURL?.scheme == "inapp"{
+                if newURL?.host == "contactForm"{
+                    performSegue(withIdentifier: "searchContact",sender: self)
                     print("click contact")
                 }
-                return false;
             }
-            
-            print (url)
-            
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                // openURL(_:) is deprecated in iOS 10+.
-                UIApplication.shared.openURL(url)
-            }
-            return false
-        default:
-            // Handle other navigation types...
-            return true
+            decisionHandler(.allow)
+          
+        } else {
+            print("not a user click")
+            decisionHandler(.allow)
         }
     }
+ */
     /*
     // MARK: - Navigation
 

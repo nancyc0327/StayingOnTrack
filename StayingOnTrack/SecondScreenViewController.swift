@@ -16,6 +16,13 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
     //@IBOutlet weak var myWebView: UIWebView!
     var webView : WKWebView!
     
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.navigationDelegate = self
+        view = webView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,18 +31,11 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
         let myRequest = NSURLRequest(url: localfilePath!);
         
         
-        // init and load request in webview.
-        
-        URLCache.shared.removeAllCachedResponses()
-        URLCache.shared.diskCapacity = 0
-        URLCache.shared.memoryCapacity = 0
-        
-        
-        webView = WKWebView(frame: self.view.frame)
-        webView.navigationDelegate = self
+        //webView = WKWebView(frame: self.view.frame)
+        //webView.navigationDelegate = self
         webView.load(myRequest as URLRequest)
-        self.view.addSubview(webView)
-        self.view.sendSubview(toBack: webView)
+        //self.view.addSubview(webView)
+        //self.view.sendSubview(toBack: webView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +44,7 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
     }
     
     
-    
+
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
         if navigationAction.navigationType == .linkActivated  {
@@ -52,16 +52,17 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
             if newURL?.scheme == "inapp"{
                 if newURL?.host == "contactForm"{
                     performSegue(withIdentifier: "searchContact",sender: self)
-                    print("click contact")
+                    //print("click contact")
                 }
             }
             decisionHandler(.allow)
           
         } else {
-            print("not a user click")
+            //print("not a user click")
             decisionHandler(.allow)
         }
     }
+ 
     /*
     // MARK: - Navigation
 
