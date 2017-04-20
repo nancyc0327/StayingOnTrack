@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class SecondScreenViewController: UIViewController,WKNavigationDelegate {
+class SecondScreenViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     
     var addressString = "test"
 
@@ -20,6 +20,7 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.navigationDelegate = self
+        webView.uiDelegate = self
         view = webView
     }
     
@@ -36,7 +37,25 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
         webView.load(myRequest as URLRequest)
         //self.view.addSubview(webView)
         //self.view.sendSubview(toBack: webView)
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.back(sender:)))
+        self.navigationItem.leftBarButtonItem = newBackButton
+        
+        
     }
+    
+    func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        // ...
+        // Go back to the previous ViewController
+        if (self.webView.canGoBack) {
+            self.webView.goBack()
+        }
+        else {
+            _ = navigationController?.popViewController(animated: true)
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,6 +86,14 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
         //insertCSSString(into: webView) // 1
         insertContentsOfCSSFile(into: webView) // 2
     }
+    
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if navigationAction.targetFrame == nil {
+            webView.load(navigationAction.request)
+        }
+        return nil
+    }
+    
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
@@ -82,12 +109,12 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate {
                 }
                 decisionHandler(.allow)
             }
-            else if UIApplication.shared.canOpenURL(newURL!) {
+/*            else if UIApplication.shared.canOpenURL(newURL!) {
                 UIApplication.shared.open(newURL! as URL, options: [:], completionHandler: nil)
                 //print(newURL!)
                 //print("Redirected to browser. No need to open it locally")
                 decisionHandler(.cancel)
-            }
+            }*/
             else{
                 decisionHandler(.allow)
             }
