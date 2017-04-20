@@ -87,44 +87,85 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate,WKUIDele
         insertContentsOfCSSFile(into: webView) // 2
     }
     
-    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+   /* func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if navigationAction.targetFrame == nil {
             webView.load(navigationAction.request)
         }
         return nil
     }
-    
+    */
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if webView != self.webView {
+            decisionHandler(.allow)
+            return
+        }
         
-        
-        if navigationAction.navigationType == .linkActivated  {
+        let app = UIApplication.shared
+        if let url = navigationAction.request.url {
+            // Handle target="_blank"
+            if navigationAction.targetFrame == nil {
+                if app.canOpenURL(url) {
+                    app.open(url as URL, options: [:], completionHandler: nil)
+                    decisionHandler(.cancel)
+                    return
+                }
+            }
             
-            let newURL = navigationAction.request.url
+            // Handle phone and email links
+            if url.scheme == "tel" || url.scheme == "mailto" {
+                if app.canOpenURL(url) {
+                    app.open(url as URL, options: [:], completionHandler: nil)
+                    decisionHandler(.cancel)
+                    return
+                }
+            }
             
-            if newURL?.scheme == "inapp"{
-                if newURL?.host == "contactForm"{
+            if url.scheme == "inapp"{
+                if url.host == "contactForm"{
                     performSegue(withIdentifier: "searchContact",sender: self)
                     //print("click contact")
+                    decisionHandler(.cancel)
+                    return
                 }
-                decisionHandler(.allow)
             }
-/*            else if UIApplication.shared.canOpenURL(newURL!) {
-                UIApplication.shared.open(newURL! as URL, options: [:], completionHandler: nil)
-                //print(newURL!)
-                //print("Redirected to browser. No need to open it locally")
-                decisionHandler(.cancel)
-            }*/
-            else{
-                decisionHandler(.allow)
-            }
-          
-        } else {
-            //print("not a user click")
+            
+            
             decisionHandler(.allow)
         }
     }
- 
+ /*
+     
+     if navigationAction.navigationType == .linkActivated  {
+     
+     let newURL = navigationAction.request.url
+     
+     if newURL?.scheme == "inapp"{
+     if newURL?.host == "contactForm"{
+     performSegue(withIdentifier: "searchContact",sender: self)
+     //print("click contact")
+     }
+     decisionHandler(.allow)
+     }
+     if newURL?.scheme == "tel" || newURL?.scheme == "mailto"  {
+     if UIApplication.shared.canOpenURL(newURL!) {
+     UIApplication.shared.open(newURL! as URL, options: [:], completionHandler: nil)
+     decisionHandler(.cancel)
+     }
+     else{
+     decisionHandler(.allow)
+     }
+     }
+     else{
+     decisionHandler(.allow)
+     }
+     
+     } else {
+     //print("not a user click")
+     decisionHandler(.allow)
+     }
+
+ */
     /*
     // MARK: - Navigation
 
