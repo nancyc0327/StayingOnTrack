@@ -11,6 +11,7 @@ import UIKit
 class SecondScreenTableViewController: UITableViewController {
     
     var pageList = [PageInfo]()
+    //var color: UIColor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,7 @@ class SecondScreenTableViewController: UITableViewController {
         
         if (row % 2) == 0  { //alternate rowcolors
             cell.backgroundColor = UIColor(red:0.93, green:1.00, blue:0.87, alpha:1.0)
-            cell.textLabel?.textColor = UIColor.black
+            //cell.textLabel?.textColor = UIColor.black
         }
         //cell.alpha = 0.75
         return cell

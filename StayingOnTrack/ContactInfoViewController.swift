@@ -16,7 +16,13 @@ class ContactInfoViewController: UIViewController , MFMailComposeViewControllerD
     
     @IBAction func callNumber(_ sender: UIButton) {
         guard let number = URL(string: "telprompt://" + contact.phone) else { return }
-        UIApplication.shared.open(number, options: [:], completionHandler: nil)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(number, options: [:], completionHandler: nil)
+        } else {
+            // Fallback on earlier versions
+            let success = UIApplication.shared.openURL(number)
+            print("Call number: \(success)")
+        }
     }
     
     @IBAction func sendEmail(_ sender: UIButton) {

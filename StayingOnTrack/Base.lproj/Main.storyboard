@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mlz-ry-EqQ">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,15 @@
             <objects>
                 <tableViewController id="31t-Bv-BSz" customClass="SecondScreenTableViewController" customModule="StayingOnTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yx4-WC-T8u">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="hnH-Ou-kCA">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hnH-Ou-kCA" id="uZA-NM-yjV">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -41,16 +41,16 @@
             </objects>
             <point key="canvasLocation" x="1166" y="578"/>
         </scene>
-        <!--Second Screen View Controller-->
+        <!-- -->
         <scene sceneID="svO-yh-C5W">
             <objects>
-                <viewController id="seq-a1-TUz" customClass="SecondScreenViewController" customModule="StayingOnTrack" sceneMemberID="viewController">
+                <viewController title=" " id="seq-a1-TUz" customClass="SecondScreenViewController" customModule="StayingOnTrack" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uEV-Vh-XMq"/>
                         <viewControllerLayoutGuide type="bottom" id="E1h-yk-PaV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="edc-hN-kiU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -71,11 +71,11 @@
                         <viewControllerLayoutGuide type="bottom" id="xlz-yr-lEP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ahn-W7-cDJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your ZIP Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qe-WA-ROY">
-                                <rect key="frame" x="10" y="74" width="394" height="21"/>
+                                <rect key="frame" x="10" y="74" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -100,13 +100,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXG-I7-cRL">
-                                <rect key="frame" x="10" y="149" width="394" height="21"/>
+                                <rect key="frame" x="10" y="149" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="test" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dRq-oo-gIC">
-                                <rect key="frame" x="10" y="180" width="394" height="78"/>
+                                <rect key="frame" x="10" y="180" width="300" height="78"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="2M9-fI-XaZ"/>
@@ -172,11 +172,11 @@
                         <viewControllerLayoutGuide type="bottom" id="mfu-ZZ-8Av"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lI8-7G-NPU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="UITextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9dH-Kg-lya">
-                                <rect key="frame" x="20" y="64" width="374" height="300"/>
+                                <rect key="frame" x="16" y="64" width="288" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="8xr-ve-zdl"/>
@@ -186,7 +186,7 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="225-BR-1Qv">
-                                <rect key="frame" x="20" y="372" width="89" height="40"/>
+                                <rect key="frame" x="16" y="372" width="89" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Pym-Ta-3y2"/>
                                     <constraint firstAttribute="width" constant="89" id="XZx-V0-ezv"/>
@@ -197,7 +197,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-mE-EHM">
-                                <rect key="frame" x="117" y="372" width="89" height="40"/>
+                                <rect key="frame" x="113" y="372" width="89" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7d2-Mn-mFr"/>
                                     <constraint firstAttribute="width" constant="89" id="VDM-8r-huk"/>
@@ -225,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uW-tb-baS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2860" y="141"/>
+            <point key="canvasLocation" x="2859.375" y="140"/>
         </scene>
         <!--First Screen View Controller-->
         <scene sceneID="PPe-Gs-wHK">
@@ -236,102 +236,117 @@
                         <viewControllerLayoutGuide type="bottom" id="57a-4w-rDo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eUl-eO-yrf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="J4f-MO-Hnk">
-                                <rect key="frame" x="30" y="74" width="172" height="122"/>
+                                <rect key="frame" x="26" y="74" width="129" height="71"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="1" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal">
                                     <string key="title">Developmental 
 Milestones by Age</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="31t-Bv-BSz" kind="show" identifier="NMilestones" id="YrZ-ye-rDM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mln-7m-Ukz">
-                                <rect key="frame" x="212" y="74" width="172" height="122"/>
+                                <rect key="frame" x="165" y="74" width="129" height="71"/>
                                 <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Contact Us"/>
+                                <state key="normal" title="Contact Us">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="SvE-n8-8c1" kind="show" identifier="Contact" id="3sc-Wk-GPK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="R6M-8g-mpd">
-                                <rect key="frame" x="30" y="206" width="172" height="123"/>
+                                <rect key="frame" x="26" y="155" width="129" height="71.5"/>
                                 <color key="backgroundColor" red="0.56078431370000004" green="0.76470588240000004" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <string key="title">Support Growth 
 and Learning</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="31t-Bv-BSz" kind="show" identifier="NSupport" id="wK6-LM-I0E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dbp-Ve-j5e">
-                                <rect key="frame" x="212" y="206" width="172" height="123"/>
+                                <rect key="frame" x="165" y="155" width="129" height="71.5"/>
                                 <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <string key="title">Keep Your 
 Child Healthy</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="31t-Bv-BSz" kind="show" identifier="NHealthy" id="HHz-hR-VeO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rJO-Vl-HVi">
-                                <rect key="frame" x="30" y="339" width="172" height="122"/>
-                                <color key="backgroundColor" red="0.61176470589999998" green="0.55294117649999996" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="26" y="236.5" width="129" height="71"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.83137254901960778" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <string key="title">Keep Your 
 Child Safe</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="31t-Bv-BSz" kind="show" identifier="NSafe" id="z3t-f2-KgQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MPg-Gn-B0A">
-                                <rect key="frame" x="212" y="339" width="172" height="122"/>
+                                <rect key="frame" x="165" y="236.5" width="129" height="71"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.63529411759999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <string key="title">Choosing Quality
 Child Care</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="seq-a1-TUz" kind="show" identifier="NQualityChildCare" id="DKX-WK-vF8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UvR-Bs-gHo">
-                                <rect key="frame" x="30" y="471" width="172" height="123"/>
+                                <rect key="frame" x="26" y="317.5" width="129" height="71.5"/>
                                 <color key="backgroundColor" red="0.20784313730000001" green="0.74117647060000003" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Kindergarten"/>
+                                <state key="normal" title="Kindergarten">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="31t-Bv-BSz" kind="show" identifier="Kindergarten" id="uX3-ls-jYu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6X7-OQ-eoX">
-                                <rect key="frame" x="212" y="471" width="172" height="123"/>
-                                <color key="backgroundColor" red="0.70588235290000001" green="0.57647058819999997" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="More Resources"/>
+                                <rect key="frame" x="165" y="317.5" width="129" height="71.5"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.79215686269999996" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="More Resources">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="seq-a1-TUz" kind="show" identifier="NResources" id="MTl-56-jfP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="emB-2t-CyJ">
-                                <rect key="frame" x="30" y="604" width="172" height="122"/>
+                                <rect key="frame" x="26" y="399" width="129" height="71"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.80392156859999997" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="About EDN"/>
+                                <state key="normal" title="About EDN">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="seq-a1-TUz" kind="show" identifier="NAbout" id="R8M-Hq-qGY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9k4-bT-ZZ6">
-                                <rect key="frame" x="212" y="604" width="172" height="122"/>
+                                <rect key="frame" x="165" y="399" width="129" height="71"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.87843137250000003" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Credits"/>
+                                <state key="normal" title="Credits">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="seq-a1-TUz" kind="show" identifier="NCredits" id="oas-Fz-9Jv"/>
                                 </connections>
@@ -387,6 +402,18 @@ Child Care</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PLa-y0-TdK"/>
+                    <connections>
+                        <outlet property="button1" destination="J4f-MO-Hnk" id="FDv-zS-LXi"/>
+                        <outlet property="button10" destination="9k4-bT-ZZ6" id="CXL-8b-kY5"/>
+                        <outlet property="button2" destination="mln-7m-Ukz" id="Zep-q5-AsF"/>
+                        <outlet property="button3" destination="R6M-8g-mpd" id="NK3-CU-fm7"/>
+                        <outlet property="button4" destination="Dbp-Ve-j5e" id="nIc-Jm-OtA"/>
+                        <outlet property="button5" destination="rJO-Vl-HVi" id="qKR-ia-KlY"/>
+                        <outlet property="button6" destination="MPg-Gn-B0A" id="vsL-dM-SgZ"/>
+                        <outlet property="button7" destination="UvR-Bs-gHo" id="C67-ht-kmX"/>
+                        <outlet property="button8" destination="6X7-OQ-eoX" id="B9P-J1-dDc"/>
+                        <outlet property="button9" destination="emB-2t-CyJ" id="zEi-v1-gvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dM6-FD-T8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -415,8 +442,8 @@ Child Care</string>
         <image name="appicon.png" width="57" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3sc-Wk-GPK"/>
         <segue reference="uX3-ls-jYu"/>
-        <segue reference="MTl-56-jfP"/>
+        <segue reference="oas-Fz-9Jv"/>
+        <segue reference="3sc-Wk-GPK"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,40 +18,16 @@ class ContactSearchViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var myErrorLabel: UILabel!
     
-    @IBAction func tapEDU(_ sender: Any) {
- //       UIApplication.shared.openURL(! as URL)
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(NSURL(string: "https://www.education.ne.gov/")! as URL, options: [:], completionHandler: nil)
-        } else {
-            // Fallback on earlier versions
-            let success = UIApplication.shared.openURL(NSURL(string: "https://www.education.ne.gov/")! as URL)
-            print("Open www.education.ne.gov: \(success)")
-        }
-    }
-    
-    
     var contact = ContactModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Looks for single or multiple taps.
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-
-        self.view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
         myTextView.text = "temp"
         prepareTextView()
         myZipField.delegate = self
         myZipField.keyboardType = UIKeyboardType.numberPad
-        self.navigationItem.title = "Contact Us"
-    }
-    
-    //Calls this function when the tap is recognized.
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
     }
     
     private func prepareTextView()
@@ -77,9 +53,13 @@ class ContactSearchViewController: UIViewController, UITextFieldDelegate{
         myTextView.attributedText = attrText
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
-        textField.resignFirstResponder()
-        return true
+    private func prepareButton()
+    {
+        mySearchButton.backgroundColor = .clear
+        mySearchButton.layer.cornerRadius = 5
+        mySearchButton.layer.borderWidth = 1
+        mySearchButton.layer.borderColor = UIColor.black.cgColor
+
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

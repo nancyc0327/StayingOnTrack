@@ -12,8 +12,6 @@ import WebKit
 class SecondScreenViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     
     var addressString = "test"
-
-    //@IBOutlet weak var myWebView: UIWebView!
     var webView : WKWebView!
     
     override func loadView() {
@@ -22,6 +20,7 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate,WKUIDele
         webView.navigationDelegate = self
         webView.uiDelegate = self
         view = webView
+        //self.navigationItem.title = titleStr
     }
     
     override func viewDidLoad() {
@@ -38,10 +37,52 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate,WKUIDele
         //self.view.addSubview(webView)
         //self.view.sendSubview(toBack: webView)
         self.navigationItem.hidesBackButton = true
-        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.back(sender:)))
-        self.navigationItem.leftBarButtonItem = newBackButton
+        //let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.back(sender:)))
+        //newBackButton.image = UIImage(named: "UJ0uL.png")
+        //self.navigationItem.leftBarButtonItem = newBackButton
+        testBackbutton()
         
         
+        
+    }
+    
+    private func testBackbutton()
+    {
+        let button = UIButton(type: .custom)
+        button.addTarget(self, action: #selector(self.back(sender:)), for: .touchUpInside)
+        
+        let imageView = UIImageView(frame: CGRect(x: -5, y: 0, width: 30, height: 28))
+        imageView.image = UIImage(named: "UJ0uL.png")
+        let label = UILabel(frame: CGRect(x: 30, y: 0, width: 50, height: 30))
+        label.text = "Back"
+        label.textColor = UIColor.blue
+        let buttonView = UIView(frame: CGRect(x: -5, y: 0, width: 80, height: 30))
+        button.frame = buttonView.frame
+        buttonView.addSubview(button)
+        buttonView.addSubview(imageView)
+        buttonView.addSubview(label)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: buttonView)
+        
+      /*  let containView = UIView(frame: CGRect(x:0, y:0,width:80, height:40))
+        
+        let imageview = UIImageView(frame: CGRect(x:0, y:10,width:30, height:30))
+        imageview.image = UIImage(named: "UJ0uL.png")
+        imageview.contentMode = UIViewContentMode.scaleAspectFill
+        containView.addSubview(imageview)
+        
+        let label = UILabel(frame: CGRect(x:30, y:0,width:50, height:40))
+        label.text = "Back"
+        label.textAlignment = NSTextAlignment.center
+        containView.addSubview(label)
+        
+        let backButton = UIBarButtonItem(customView: containView)
+        backButton.style = UIBarButtonItemStyle.plain
+        backButton.targetForAction(#selector(self.back(sender:)), withSender: self)
+        
+        self.navigationItem.leftBarButtonItem = backButton
+        */
+    
     }
     
     func back(sender: UIBarButtonItem) {
@@ -105,17 +146,17 @@ class SecondScreenViewController: UIViewController,WKNavigationDelegate,WKUIDele
         if let url = navigationAction.request.url {
             // Handle target="_blank"
             if navigationAction.targetFrame == nil {
-                if app.canOpenURL(url) {
-                    app.open(url as URL, options: [:], completionHandler: nil)
-                    decisionHandler(.cancel)
-                    return
-                }
+                webView.load(navigationAction.request)
             }
             
             // Handle phone and email links
             if url.scheme == "tel" || url.scheme == "mailto" {
                 if app.canOpenURL(url) {
-                    app.open(url as URL, options: [:], completionHandler: nil)
+                    if #available(iOS 10.0, *) {
+                        app.open(url as URL, options: [:], completionHandler: nil)
+                    } else {
+                        UIApplication.shared.openURL(url)
+                    }
                     decisionHandler(.cancel)
                     return
                 }

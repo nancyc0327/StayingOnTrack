@@ -42,12 +42,12 @@
 		88A690781E9551F10071ECBF /* Child-Safe-0-18.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690721E9551F10071ECBF /* Child-Safe-0-18.html */; };
 		88A690791E9551F10071ECBF /* Child-Safe-3-5.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690731E9551F10071ECBF /* Child-Safe-3-5.html */; };
 		88A6907A1E9551F10071ECBF /* Child-Safe-18-3.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A690741E9551F10071ECBF /* Child-Safe-18-3.html */; };
+		88AAA8D71EAAA06500CAB217 /* UJ0uL.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AAA8D61EAAA06500CAB217 /* UJ0uL.png */; };
 		88F207ED1E8D4FF400D1C151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F207EC1E8D4FF400D1C151 /* AppDelegate.swift */; };
 		88F207EF1E8D4FF400D1C151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F207EE1E8D4FF400D1C151 /* ViewController.swift */; };
 		88F207F21E8D4FF400D1C151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F207F01E8D4FF400D1C151 /* Main.storyboard */; };
 		88F207F41E8D4FF400D1C151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F207F31E8D4FF400D1C151 /* Assets.xcassets */; };
 		88F207F71E8D4FF400D1C151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F207F51E8D4FF400D1C151 /* LaunchScreen.storyboard */; };
-		88F208001E8D6E6500D1C151 /* FirstScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F207FF1E8D6E6500D1C151 /* FirstScreenTableViewController.swift */; };
 		88F208021E8D6F2A00D1C151 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */; };
 		88F208131E8D8C5100D1C151 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F2080E1E8D8C5000D1C151 /* about.html */; };
 		88F208141E8D8C5100D1C151 /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 88F2080F1E8D8C5000D1C151 /* credits.html */; };
@@ -94,6 +94,7 @@
 		88A690721E9551F10071ECBF /* Child-Safe-0-18.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Safe-0-18.html"; path = "html/Child-Safe-0-18.html"; sourceTree = SOURCE_ROOT; };
 		88A690731E9551F10071ECBF /* Child-Safe-3-5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Safe-3-5.html"; path = "html/Child-Safe-3-5.html"; sourceTree = SOURCE_ROOT; };
 		88A690741E9551F10071ECBF /* Child-Safe-18-3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "Child-Safe-18-3.html"; path = "html/Child-Safe-18-3.html"; sourceTree = SOURCE_ROOT; };
+		88AAA8D61EAAA06500CAB217 /* UJ0uL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UJ0uL.png; sourceTree = "<group>"; };
 		88F207E91E8D4FF400D1C151 /* StayingOnTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayingOnTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F207EC1E8D4FF400D1C151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F207EE1E8D4FF400D1C151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		88F207F31E8D4FF400D1C151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F207F61E8D4FF400D1C151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88F207F81E8D4FF400D1C151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88F207FF1E8D6E6500D1C151 /* FirstScreenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenTableViewController.swift; sourceTree = "<group>"; };
 		88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 		88F2080E1E8D8C5000D1C151 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = html/about.html; sourceTree = SOURCE_ROOT; };
 		88F2080F1E8D8C5000D1C151 /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = credits.html; path = html/credits.html; sourceTree = SOURCE_ROOT; };
@@ -142,6 +142,7 @@
 		88F207EB1E8D4FF400D1C151 /* StayingOnTrack */ = {
 			isa = PBXGroup;
 			children = (
+				88AAA8D61EAAA06500CAB217 /* UJ0uL.png */,
 				884F7D031EA7F9ED001DFE4C /* style.css */,
 				884F7CE91EA7C7B6001DFE4C /* appicon.png */,
 				88F208181E8D9D2900D1C151 /* html */,
@@ -149,7 +150,6 @@
 				88F207EE1E8D4FF400D1C151 /* ViewController.swift */,
 				88F207F01E8D4FF400D1C151 /* Main.storyboard */,
 				88F207F51E8D4FF400D1C151 /* LaunchScreen.storyboard */,
-				88F207FF1E8D6E6500D1C151 /* FirstScreenTableViewController.swift */,
 				884F7CE71EA7BC84001DFE4C /* FirstScreenViewController.swift */,
 				88F208011E8D6F2A00D1C151 /* SecondScreenViewController.swift */,
 				88F2081B1E8EC87200D1C151 /* ContactSearchViewController.swift */,
@@ -276,6 +276,7 @@
 				88A6905E1E953FB30071ECBF /* 2-yr.html in Resources */,
 				88F208141E8D8C5100D1C151 /* credits.html in Resources */,
 				884F7CFB1EA7E0F2001DFE4C /* now_next_yr.html in Resources */,
+				88AAA8D71EAAA06500CAB217 /* UJ0uL.png in Resources */,
 				88A690781E9551F10071ECBF /* Child-Safe-0-18.html in Resources */,
 				88F208131E8D8C5100D1C151 /* about.html in Resources */,
 				884F7CF81EA7E0F2001DFE4C /* Immunizations.html in Resources */,
@@ -329,7 +330,6 @@
 				88F207EF1E8D4FF400D1C151 /* ViewController.swift in Sources */,
 				88F207ED1E8D4FF400D1C151 /* AppDelegate.swift in Sources */,
 				88A690521E9440850071ECBF /* SubDirModel.swift in Sources */,
-				88F208001E8D6E6500D1C151 /* FirstScreenTableViewController.swift in Sources */,
 				884F7CE81EA7BC84001DFE4C /* FirstScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +456,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\n";
 				DEVELOPMENT_TEAM = LDTL48A298;
 				INFOPLIST_FILE = StayingOnTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unlsbsrc.StayingOnTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,9 +468,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				DEVELOPMENT_TEAM = LDTL48A298;
 				INFOPLIST_FILE = StayingOnTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unlsbsrc.StayingOnTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
