@@ -244,8 +244,8 @@
 				TargetAttributes = {
 					88F207E81E8D4FF400D1C151 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = LDTL48A298;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 6UHH9HV8WJ;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -453,13 +453,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\n";
-				DEVELOPMENT_TEAM = LDTL48A298;
+				DEVELOPMENT_TEAM = 6UHH9HV8WJ;
 				INFOPLIST_FILE = StayingOnTrack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unlsbsrc.StayingOnTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = org.answers4families.StayingOnTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6529a5d3-f6aa-48f0-a7c0-b2d2958e579a";
+				PROVISIONING_PROFILE_SPECIFIER = NanStayingOnTrackDevelopment;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -469,13 +472,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DEVELOPMENT_TEAM = LDTL48A298;
+				DEVELOPMENT_TEAM = 6UHH9HV8WJ;
 				INFOPLIST_FILE = StayingOnTrack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unlsbsrc.StayingOnTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = org.answers4families.StayingOnTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "73a341e3-a427-4131-9bee-06ff37b7f994";
+				PROVISIONING_PROFILE_SPECIFIER = StayingOnTrackDistributionNan;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
